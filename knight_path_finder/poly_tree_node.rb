@@ -30,7 +30,7 @@ class PolyTreeNode
         end
     end 
 
-    def dfs(target)
+    def dfs(target) # Depth First Search
         return self if value == target
 
         children.each do |child|
@@ -41,7 +41,7 @@ class PolyTreeNode
         nil
     end 
 
-    def bfs(target)
+    def bfs(target) # Breadth First Search
         queue = [self]
 
         until queue.empty?
